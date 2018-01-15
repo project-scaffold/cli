@@ -2,7 +2,6 @@
 
 {{ description }}
 
-
 ## Install
 
 ```bash
@@ -16,5 +15,4 @@ npm i -g {{ name }}
 ## LICENSE
 
 {{ LICENSE }}
-
 {% endif %}

@@ -29,9 +29,10 @@
     "request": "^2.83.0",
     "rmfr": "^1.0.8",
     "semver": "^5.4.1"
-  }
+  },
   {% if !private %}
-  "license": "{license}",
-  {% endif %}
+  "license": "{{license}}",
+  {% elif %}
   "private": {{private}}
+  {% endif %}
 }
