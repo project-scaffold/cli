@@ -31,8 +31,8 @@
     "semver": "^5.4.1"
   },
   {% if !private %}
-  "license": "{{license}}",
-  {% elseif %}
+  "license": "{{license}}"
+  {% else %}
   "private": {{private}}
   {% endif %}
 }
