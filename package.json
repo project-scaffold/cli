@@ -1,7 +1,7 @@
 {
   "name": "{{name}}",
   "version": "0.0.1",
-  "description": "Node Comand Line Dev Template with project-next-cli",
+  "description": "{{description}}",
   "main": "index.js",
   "repository": "https://github.com/{{git}}",
   "author": "{{author}}",
@@ -32,7 +32,7 @@
   },
   {% if !private %}
   "license": "{{license}}",
-  {% elif %}
+  {% elseif %}
   "private": {{private}}
   {% endif %}
 }

@@ -14,5 +14,5 @@ npm i -g {{ name }}
 
 ## LICENSE
 
-{{ LICENSE }}
+{{ license }}
 {% endif %}
