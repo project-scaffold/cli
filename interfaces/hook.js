@@ -1,9 +1,10 @@
-const execSync = require('child_process').execSync
+const exec = require('child_process').execSync
 
 module.exports = {
-  after(answer, reply){
+   after(meta, module) {
     console.log('hook after starting')
-    execSync(`cd ${answer.scaffold} && npm i`)
-    console.log('hook after done')
+    
+    return module.runBash(`cd ${meta.dir} && yarn install`)
+      .then(() =>  console.log('hook after done'))
   }
 }
